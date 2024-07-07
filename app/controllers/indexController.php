@@ -11,16 +11,16 @@
             // Dados de exemplo
             $this->view->dados = array('Sofá', 'Cadeira', 'Cama');
 
-            // Carregando views
-            $this->render('index');
+            // Carregando views e layouts
+            $this->render('index', 'layout1');
         }
         
         public function sobreNos() {
             // Dados de exemplo
             $this->view->dados = array('Sofá', 'Cadeira', 'Cama');
 
-            // carregando views
-            $this->render('sobreNos');
+            // carregando views e layouts
+            $this->render('sobreNos', 'layout2');
         }
     }
 ?>
