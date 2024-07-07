@@ -2,6 +2,9 @@
     // ini_set() -> Permitir setar valores em tempo de processamento do init PHP (configuração do ambiente)
     // ini_set('error_reporting', 'E_STRICT');
 
+    // Outra forma de ignorar erro é utilizar @
+    // O @ ignora erro da linha do tipo WARNING
+
     // inicializando autoload
     require_once "../vendor/autoload.php";
 

@@ -1,11 +1,15 @@
 # MVC_php
 Model View Controler com PHP
 
+## Tools
+- [bootstrap](https://getbootstrap.com/)  
+- [jquery](https://releases.jquery.com/)  
+- [composer](https://getcomposer.org/)  
+
 ## Iniciando Local Server PHP
 ![alt text](imgs/assets/image.png)
 
 ## Composer
-### [Composer DOC](https://getcomposer.org/)  
 - Install  
 ![alt text](imgs/assets/image-1.png)  
 - Verificando integridade  
@@ -17,3 +21,6 @@ Model View Controler com PHP
 - Create composer.json file  
 - Run .phar file  
 ![alt text](imgs/assets/image-5.png)
+
+## MySQL
+![alt text](imgs/assets/image-6.png)

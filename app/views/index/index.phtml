@@ -5,8 +5,15 @@
     // debug
     // echo "index controller.";
 
+    // echo '<pre>';
+    //     print_r($this->view->dados);
+    // echo '</pre>';
+
     // Recuperando dados de controller
-    foreach($this->view->dados as $key => $value) {
-        echo $value . '<br>';
+    // Obtemos a lista com todos os produtos do DB, e iteramos para obter produtos isolados e seus respectivos elementos
+    foreach($this->view->dados as $key => $produto) {
+        // echo $value . '<br>';
+        echo $produto[0] . ' - ' . $produto[1] . ' - ' . $produto[2];
+        echo '<br>';
     }
 ?>
