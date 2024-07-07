@@ -1,4 +1,7 @@
 <?php
+    // ini_set() -> Permitir setar valores em tempo de processamento do init PHP (configuração do ambiente)
+    // ini_set('error_reporting', 'E_STRICT');
+
     // inicializando autoload
     require_once "../vendor/autoload.php";
 
