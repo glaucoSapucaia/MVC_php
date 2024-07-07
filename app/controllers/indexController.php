@@ -2,9 +2,13 @@
     // Lembresse do namespace | Necessário para o autoload
     namespace App\Controllers;
 
+    // Recursos MF
     use MF\Controller\Action;
-    use App\Connection;
+    use MF\Model\Container;
+
+    // recursos Models
     use App\Models\Produto;
+    use App\Models\Info;
 
     // Definindo controllers
     class IndexController extends Action {
@@ -13,12 +17,8 @@
             // Dados de exemplo
             // $this->view->dados = array('Sofá', 'Cadeira', 'Cama');
 
-            // Com ::, podemos acessar uma método estático diretamente
-            // Criando conexão com DB
-            $conn = Connection::getDb();
-
-            // Instanciando obj produto com conexao ao DB
-            $produto = new Produto($conn);
+            // Obtendo produtos dinamicamente com class Container
+            $produto = Container::getModel("Produto");
 
             // Recuperando lista de produtos do DB
             $produtos = $produto->getProdutos();
@@ -31,6 +31,13 @@
         public function sobreNos() {
             // Dados de exemplo
             // $this->view->dados = array('Sofá', 'Cadeira', 'Cama');
+
+            // Obtendo infos dinamicamente com class Container
+            $info = Container::getModel("Info");
+
+            // Recuperando lista de produtos do DB
+            $infos = $info->getInfo();
+            $this->view->dados = $infos;
 
             // carregando views e layouts
             $this->render('sobreNos', 'layout2');

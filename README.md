@@ -23,4 +23,5 @@ Model View Controler com PHP
 ![alt text](imgs/assets/image-5.png)
 
 ## MySQL
-![alt text](imgs/assets/image-6.png)
+![alt text](imgs/assets/image-6.png)  
+![alt text](imgs/assets/image-7.png)  

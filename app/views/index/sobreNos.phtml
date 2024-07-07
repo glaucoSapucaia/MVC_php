@@ -5,8 +5,14 @@
     // debug
     // echo "sobreNos controller.";
 
+    // echo '<pre>';
+    //     print_r($this->view->dados);
+    // echo '</pre>';
+
     // Recuperando dados de controller
-    foreach($this->view->dados as $key => $value) {
-        echo $value . '<br>';
-    }
-?>
+    foreach($this->view->dados as $key => $info) { ?>
+        <h1><?= $info[0] ?></h1>
+        <p><?= $info[1] ?></p>
+        <hr>
+
+<?php } ?>
